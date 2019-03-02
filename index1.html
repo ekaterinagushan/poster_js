@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main1.css">
+    <title>Холон</title>
+  </head>
+  <body>
+    <nav class = "menubar">
+      <a class="logo" href="#">
+        <img src="img/logo.svg" alt="">
+      </a>
+      <a class="about" href="index1.html">
+        О проекте
+      </a>
+
+    </nav>
+
+    <!-- <script src="./anime.min.js"></script> -->
+    <script src="./jquery.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $("div").each(function(index) {
+        let width  = 150
+        let height = 145
+        let x      = 400
+        let y      = 200
+        $(this).css({
+          "top": y + "px",
+          "left": x + "px",
+          "width":  width + "px",
+          "height": height + "px",
+        })
+        $(this).on("mouseenter", function() {
+          let width  = Math.floor(Math.random() * 1000) + 500
+          let height = Math.floor(Math.random() * 1000) +500
+          let x      = Math.floor(Math.random() * 800) +200
+          let y      = Math.floor(Math.random() * 300) +200
+          $(this).css({
+            "top": y + "px",
+            "left": x + "px",
+            "width":  width + "px",
+            "height": height + "px",
+          })
+        })
+      })
+    })
+
+  </script>
+
+      <section id="container">
+        <div><img src="img/man.png"></div>
+        <div><img src="img/man1.png"></div>
+        <div><img src="img/man2.png"></div>
+        <div><img src="img/holon.png"></div>
+      </section>
+
+
+
+
+     <!-- <div class="side"><img src="img/a.svg"></div>
+      // <div><img src="img/r.svg"></div>
+      // <div><img src="img/k.svg"></div> -->
+
+  </body>
+</html>

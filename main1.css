@@ -1,0 +1,52 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color:#FAFAFA;
+  background-image: linear-gradient(silver 1px, transparent 1px),
+  linear-gradient(90deg, silver 1px, transparent 1px);
+  background-size: 20px 20px, 20px 20px, 20px 20px, 20px 20px;
+  background-position:-1px -1px, -1px -1px, -1px -1px, -1px -1px;
+  }
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+  align-items: center;
+  height: 1.250em;
+  padding: 1.250em;
+}
+
+.logo {
+  width: 12.5em;
+  margin-left: -1.550em;
+}
+
+.about {
+  font-family: Roboto;
+  margin-right: 2.5em;
+  text-decoration: none;
+  color: grey;
+}
+
+.polymorpf {
+  fill:#000;
+  stroke:#F4D80F;
+  stroke-miterlimit:10;
+}
+
+div {
+  position: absolute;
+}
+
+ section#container {
+   position: absolute;
+   width: 500px;
+   height: 500px;
+   margin: 0;
+ }
